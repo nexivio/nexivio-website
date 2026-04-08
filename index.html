@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEXIVIO - Growth Marketing Agency</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <h1>NEXIVIO</h1>
+                <p class="tagline">Growth Marketing Squad</p>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#newsletter">Newsletter</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2 class="hero-title">Scale Your Business<br><span class="highlight">With Precision</span></h2>
+            <p class="hero-subtitle">Data-driven growth strategies that deliver measurable results. We're not just marketers—we're your growth squad.</p>
+            <button class="cta-button" onclick="scrollToNewsletter()">Get Started</button>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>Why NEXIVIO</h2>
+                <p>We combine strategy, creative, media, and data into one integrated growth engine</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-number">01</div>
+                    <h3>Data-Driven</h3>
+                    <p>Every decision backed by analytics. We measure what matters and optimize relentlessly.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-number">02</div>
+                    <h3>High-Velocity</h3>
+                    <p>Fast experimentation cycles. We test, learn, and scale winners in weeks, not months.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-number">03</div>
+                    <h3>Results-Focused</h3>
+                    <p>Premium positioning with transparent metrics. You see exactly what you're paying for.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-number">04</div>
+                    <h3>Full-Stack</h3>
+                    <p>Strategy to execution. We handle everything from positioning to performance marketing.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Services</h2>
+                <p>Integrated growth solutions for ambitious brands</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Growth Strategy</h3>
+                    <p>Positioning, market analysis, and growth roadmaps that define your competitive advantage.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Performance Marketing</h3>
+                    <p>Paid media across all channels optimized for CAC, LTV, and sustainable growth.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Creative & Content</h3>
+                    <p>High-converting creative assets and content strategies that resonate with your audience.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Analytics & Optimization</h3>
+                    <p>Custom dashboards, attribution modeling, and continuous optimization frameworks.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section id="newsletter" class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Join 500+ Growth Leaders</h2>
+                <p>Get exclusive insights on growth marketing trends, case studies, and actionable strategies delivered to your inbox.</p>
+                
+                <form id="newsletterForm" class="newsletter-form" onsubmit="handleSubmit(event)">
+                    <div class="form-group">
+                        <input 
+                            type="text" 
+                            id="fullName" 
+                            name="fullName" 
+                            placeholder="Full Name" 
+                            required
+                            class="form-input"
+                        >
+                    </div>
+                    <div class="form-group">
+                        <input 
+                            type="email" 
+                            id="email" 
+                            name="email" 
+                            placeholder="Email Address" 
+                            required
+                            class="form-input"
+                        >
+                    </div>
+                    <div class="form-group">
+                        <input 
+                            type="text" 
+                            id="organization" 
+                            name="organization" 
+                            placeholder="Company (Optional)" 
+                            class="form-input"
+                        >
+                    </div>
+                    <button type="submit" class="submit-button">Subscribe</button>
+                </form>
+
+                <div id="successMessage" class="success-message" style="display: none;">
+                    <p>✓ Welcome! Check your email for exclusive insights.</p>
+                </div>
+                <div id="errorMessage" class="error-message" style="display: none;">
+                    <p>An error occurred. Please try again.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 NEXIVIO. All rights reserved. | Growth Marketing Squad</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
