@@ -1,15 +1,9 @@
 {
   "version": 2,
-  "builds": [
-    {
-      "src": "server.js",
-      "use": "@vercel/node"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "server.js"
-    }
-  ]
+  "buildCommand": "npm install",
+  "outputDirectory": ".",
+  "env": {
+    "GOOGLE_SHEETS_ID": "@google_sheets_id",
+    "GOOGLE_CREDENTIALS": "@google_credentials"
+  }
 }
